@@ -97,7 +97,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .resume {
+  height: 1100px;
+  /*width: 600px;*/
+}
+
+.resume-frame {
   width: 100%;
+  overflow: scroll;
+  height: 1050px;
 }
 
 /* ==========================================================================
