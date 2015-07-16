@@ -72,7 +72,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #4a4a4a;
 }
 
-
+.navbar-name {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
 .navbar-brand {
 	font-weight: 700;
 }
