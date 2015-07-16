@@ -44,8 +44,12 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#aboutwrap">About</a></li>
+            <li class="nav-link active" onclick="onClick(this)">
+              <a href="#headerwrap">Home</a>
+            </li>
+            <li class="nav-link" onclick="onClick(this)">
+              <a href="#aboutwrap">About</a>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -56,7 +60,7 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-lg-offset-3">
-					<h4>HELLO PEOPLE, MY NAME IS</h4>
+					<h4>HELLO, MY NAME IS</h4>
 					<h1>JOSHUA COLE</h1>
 					<h4>WEB DEVELOPER</h4>
 				</div>
@@ -193,5 +197,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function onClick (elem) {
+        $(".active").removeClass("active");
+        $(elem).addClass("active");
+      };
+    </script>
   </body>
 </html>
